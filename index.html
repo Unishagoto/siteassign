@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HTML Lists: Ordered and Unordered</title>
+    <title>HTML Basics: Tags and Lists</title>
 
     <style>
         body {
@@ -21,10 +21,9 @@
         }
 
         h1 {
-            background: #2f6fa3;
-            color: white;
-            padding: 15px;
-            margin: -20px -20px 20px -20px;
+            margin-top: 0;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
         }
 
         .subtitle {
@@ -34,7 +33,7 @@
 
         .row {
             display: flex;
-            gap: 20px;
+            gap: 15px;
         }
 
         .card {
@@ -44,18 +43,43 @@
             background: #fafafa;
         }
 
+        .card h3 {
+            background: #2f6fa3;
+            color: white;
+            padding: 10px;
+            margin: -15px -15px 15px -15px;
+        }
+
         .code {
             background: #eef3f7;
             padding: 10px;
             font-family: monospace;
-        }
-
-        .preview {
             margin-top: 10px;
         }
 
-        .summary {
+        .section {
             margin-top: 30px;
+        }
+
+        .list-box {
+            display: flex;
+            gap: 15px;
+        }
+
+        .list-card {
+            flex: 1;
+            border: 1px solid #ddd;
+            background: #fafafa;
+            padding: 15px;
+        }
+
+        .list-card h4 {
+            margin-top: 0;
+        }
+
+        .button {
+            margin-top: 20px;
+            text-align: right;
         }
 
         button {
@@ -71,62 +95,70 @@
 <body>
 
 <div class="container">
-    <h1>HTML Lists: Ordered and Unordered</h1>
-    <p class="subtitle">Understand the differences between ordered and unordered lists in HTML.</p>
+    <h1>HTML Basics: Tags and Lists</h1>
+    <p class="subtitle">Learn about basic HTML tags and how to create lists on your webpage.</p>
 
     <div class="row">
         <div class="card">
-            <h3>Ordered Lists</h3>
-            <p>Ordered lists display items in a specific sequence:</p>
-            <div class="code">
-                &lt;ol&gt;<br>
-                &lt;li&gt;First item&lt;/li&gt;<br>
-                &lt;li&gt;Second item&lt;/li&gt;<br>
-                &lt;li&gt;Third item&lt;/li&gt;<br>
-                &lt;/ol&gt;
-            </div>
-
-            <div class="preview">
-                <p><strong>Preview:</strong></p>
-                <ol>
-                    <li>First item</li>
-                    <li>Second item</li>
-                    <li>Third item</li>
-                </ol>
-            </div>
+            <h3>HTML Tags</h3>
+            <p>HTML tags are the building blocks of a webpage.</p>
+            <div class="code">&lt;h1&gt;Heading Tag&lt;/h1&gt;</div>
+            <p>Header Tag</p>
+            <div class="code">&lt;p&gt;This is a paragraph.&lt;/p&gt;</div>
+            <p>Paragraph Tag</p>
         </div>
 
         <div class="card">
-            <h3>Unordered Lists</h3>
-            <p>Unordered lists display items with bullet points:</p>
-            <div class="code">
-                &lt;ul&gt;<br>
-                &lt;li&gt;Apple&lt;/li&gt;<br>
-                &lt;li&gt;Banana&lt;/li&gt;<br>
-                &lt;li&gt;Cherry&lt;/li&gt;<br>
-                &lt;/ul&gt;
-            </div>
+            <h3>Paragraph Tags</h3>
+            <p>Use the &lt;p&gt; tag to add paragraphs to your content.</p>
+            <div class="code">&lt;p&gt;This is a paragraph.&lt;/p&gt;</div>
+        </div>
 
-            <div class="preview">
-                <p><strong>Preview:</strong></p>
-                <ul>
-                    <li>Apple</li>
-                    <li>Banana</li>
-                    <li>Cherry</li>
-                </ul>
-            </div>
+        <div class="card">
+            <h3>Lists in HTML</h3>
+            <p>Learn how to create lists in HTML.</p>
+            <ul>
+                <li><a href="lists.html">Ordered Lists</a></li>
+                <li><a href="lists.html">Unordered Lists</a></li>
+            </ul>
         </div>
     </div>
 
-    <div class="summary">
-        <h3>Summary</h3>
-        <p>Ordered lists are numbered. Unordered lists use bullet points.</p>
-    </div>
+    <div class="section">
+        <h2>Types of Lists</h2>
 
-    <div style="text-align:left;">
-        <a href="index.html"><button>← Back to HTML Basics</button></a>
+        <div class="list-box">
+            <div class="list-card">
+                <h4>Ordered List</h4>
+                <p>An ordered list uses numbers:</p>
+                <div class="code">
+                    &lt;ol&gt;<br>
+                    1. First item<br>
+                    2. Second item<br>
+                    3. Third item<br>
+                    &lt;/ol&gt;
+                </div>
+            </div>
+
+            <div class="list-card">
+                <h4>Unordered List</h4>
+                <p>An unordered list uses bullet points:</p>
+                <div class="code">
+                    &lt;ul&gt;<br>
+                    • Apple<br>
+                    • Banana<br>
+                    • Cherry<br>
+                    &lt;/ul&gt;
+                </div>
+            </div>
+        </div>
+
+        <div class="button">
+            <a href="lists.html"><button>Next: Learn About Lists →</button></a>
+        </div>
     </div>
 </div>
 
 </body>
 </html>
+
